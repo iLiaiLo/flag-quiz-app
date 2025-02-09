@@ -22,9 +22,9 @@ function checkQuizResult(quizContent,Countries,resultContent){
         for(let i=0;i<input_content.length;i++){
          let str=""
          for(let j=0;j<input_content[i].children.length;j++){
-            input_content[i].children[j].tagName==="INPUT"?str+=input_content[i].children[j].value:str+=" ";
+            input_content[i].children[j].tagName==="INPUT" ? str+=input_content[i].children[j].value : str+=" ";
          }
-         my_results.push(str)
+         my_results.push(str);
         }
      
      
@@ -46,9 +46,8 @@ function checkQuizResult(quizContent,Countries,resultContent){
 
         resultContent.textContent=`Your result is ${counter}/15`
  
-        console.log(counter)
     } catch (error) {
-        console.log(error)
+        console.log(error.message)
     }
 }
 export default checkQuizResult
