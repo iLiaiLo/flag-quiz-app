@@ -1,4 +1,4 @@
-import {url,options} from './process_env.js'
+import {url,options} from './EnvVars.js'
 async function fetchCountriesData(){
     try {
         const response = await fetch(url, options);

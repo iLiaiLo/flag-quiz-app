@@ -1,3 +1,2 @@
 # files to ingore
-
-process_env.js
+EnvVars.js
